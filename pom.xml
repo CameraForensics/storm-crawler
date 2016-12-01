@@ -76,7 +76,7 @@
 	<repositories>
 		<repository>
 			<id>standard-nexus</id>
-			<url>http://${env.NEXUS_IP}/content/groups/public</url>
+			<url>http://${env.NEXUS_IP}/nexus/content/groups/public</url>
 			<releases><enabled>true</enabled></releases>
 			<snapshots><enabled>true</enabled></snapshots>
 		</repository>
@@ -87,14 +87,14 @@
 		<repository>
 			<id>standard-nexus</id>
 			<name>Nexus</name>
-			<url>http://${env.NEXUS_IP}/content/repositories/releases</url>
+			<url>http://${env.NEXUS_IP}/nexus/content/repositories/releases</url>
 		</repository>
 
 		<!-- Publish the versioned releases here -->
 		<snapshotRepository>
 			<id>standard-nexus</id>
 			<name>Nexus</name>
-			<url>http://${env.NEXUS_IP}/content/repositories/snapshots</url>
+			<url>http://${env.NEXUS_IP}/nexus/content/repositories/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 
