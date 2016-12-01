@@ -157,4 +157,8 @@ public class Metadata {
         return md.keySet();
     }
 
+    public Metadata clone() {
+        final Map<String,String[]> clonedData = new HashMap<>(this.md);
+        return new Metadata(clonedData);
+    }
 }
